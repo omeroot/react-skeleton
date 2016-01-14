@@ -184,7 +184,7 @@ gulp.task("copy:elemental:less", function () {
  */
 gulp.task("watch", function () {
   gulp.watch("./styles/*.css", ["minify-css"]).on("change", browserSync.reload);
-  gulp.watch("./html/*.html", ["copy-html-files"]).on("change", browserSync.reload);
+  gulp.watch("./html/*.html", ["copy:html"]).on("change", browserSync.reload);
 });
 
 
