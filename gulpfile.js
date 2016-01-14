@@ -183,7 +183,7 @@ gulp.task("copy:elemental:less", function () {
  *
  */
 gulp.task("watch", function () {
-  gulp.watch("./styles/*.css", ["minify-css"]).on("change", browserSync.reload);
+  gulp.watch("./styles/*.css", ["reconcat"]).on("change", browserSync.reload);
   gulp.watch("./html/*.html", ["copy:html"]).on("change", browserSync.reload);
 });
 
@@ -232,6 +232,10 @@ gulp.task("create-temp", function () {
   if (!fs.existsSync(__dirname + "/temp")) {
     fs.mkdir(__dirname + "/temp/");
   }
+});
+
+gulp.task("reconcat", function(){
+  runSequence("minify-css", "css-concat");
 });
 
 

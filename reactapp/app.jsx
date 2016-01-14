@@ -17,8 +17,8 @@ var App = React.createClass({
   },
   render: function () {
     return (
-        <Row>
-          <Col sm="1/4">
+        <Row id="login">
+          <Col sm="1/2">
             <Form>
               <FormField label="Email address" htmlFor="basic-form-input-email">
                 <FormInput autofocus type="email" placeholder="Enter emaill" name="basic-form-input-email"/>
