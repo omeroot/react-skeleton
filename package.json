@@ -37,6 +37,7 @@
     "run-sequence": "^1.1.5",
     "colors": "^1.1.2",
     "del": "^2.2.0",
-    "elemental": "^0.5.11"
+    "elemental": "^0.5.11",
+    "marked": "0.3.5"
   }
 }

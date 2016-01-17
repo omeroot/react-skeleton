@@ -96,6 +96,7 @@ gulp.task('bundle', function () {
   bundler.require('react-dom');
   bundler.require('react-router');
   bundler.require('./bower_components/moment/moment.js');
+  bundler.require('./bower_components/jquery/dist/jquery.min.js');
 
   watcher = watchify(bundler);
 
